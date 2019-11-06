@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sample.png-70ea3a31d44e304c3a501032fc92b2f7.stex"
+path="res://.import/sample.png-e83d904df67be35a3470a03c20e2b3c2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Breakout Tile Set Free/sample.png"
-dest_files=[ "res://.import/sample.png-70ea3a31d44e304c3a501032fc92b2f7.stex" ]
+source_file="res://sample.png"
+dest_files=[ "res://.import/sample.png-e83d904df67be35a3470a03c20e2b3c2.stex" ]
 
 [params]
 

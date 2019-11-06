@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Breakout_Tile_Free.png-d11c21474c23284e96c759208ebab657.stex"
+path="res://.import/Breakout_Tile_Free.png-e7030da4ca2e52340afb3b7ef9018e21.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Breakout Tile Set Free/Sprite Sheet/Breakout_Tile_Free.png"
-dest_files=[ "res://.import/Breakout_Tile_Free.png-d11c21474c23284e96c759208ebab657.stex" ]
+source_file="res://Sprite Sheet/Breakout_Tile_Free.png"
+dest_files=[ "res://.import/Breakout_Tile_Free.png-e7030da4ca2e52340afb3b7ef9018e21.stex" ]
 
 [params]
 
