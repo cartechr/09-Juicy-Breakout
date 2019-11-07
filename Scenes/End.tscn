@@ -1,354 +1,594 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Breakout Tile Set Free/PNG/Game Over.PNG" type="Texture" id=1]
-[ext_resource path="res://Rick Astley - Never Gonna Give You Up (Video) (1).wav" type="AudioStream" id=2]
+[ext_resource path="res://Breakout Tile Set Free/PNG/28-Breakout-Tiles.png" type="Texture" id=1]
+[ext_resource path="res://Breakout Tile Set Free/PNG/Game Over.PNG" type="Texture" id=2]
 
-[sub_resource type="PhysicsMaterial" id=1]
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8.96682, 8.59204 )
+
+[sub_resource type="PhysicsMaterial" id=3]
+friction = 0.0
 bounce = 10.0
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 34.9532, 22.3154 )
+extents = Vector2( 35.7872, 23.7351 )
 
 [node name="Game Over" type="Node2D"]
 
-[node name="Game Over Ball" type="RigidBody2D" parent="."]
-position = Vector2( -96.796, -14.3094 )
-mode = 2
-mass = 2775.7
-physics_material_override = SubResource( 1 )
-linear_velocity = Vector2( 200, -200 )
-angular_velocity = 500.0
+[node name="Messages" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Message" type="Node2D" parent="Messages"]
+editor/display_folded = true
+position = Vector2( 40.8112, 8.16229 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Game Over Ball"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
+[node name="ColorRect" type="ColorRect" parent="Messages/Message"]
+margin_left = 446.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 296.0
+color = Color( 0, 0, 0, 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
+[node name="Label" type="Label" parent="Messages/Message"]
+margin_left = 450.818
+margin_top = 268.564
+margin_right = 523.818
+margin_bottom = 282.564
+text = "Game Over"
 
-[node name="Game Over Ball3" type="RigidBody2D" parent="."]
-position = Vector2( 27.4768, 55.653 )
-mode = 2
-physics_material_override = SubResource( 1 )
+[node name="Message2" type="Node2D" parent="Messages"]
+editor/display_folded = true
+position = Vector2( 40.8112, -31.5513 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Game Over Ball3"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
+[node name="ColorRect" type="ColorRect" parent="Messages/Message2"]
+margin_left = 446.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 296.0
+color = Color( 0, 0, 0, 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball3"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
+[node name="Label" type="Label" parent="Messages/Message2"]
+margin_left = 450.818
+margin_top = 268.564
+margin_right = 523.818
+margin_bottom = 282.564
+text = "Game Over"
 
-[node name="Game Over Ball2" type="RigidBody2D" parent="."]
-position = Vector2( 145.453, 18.2519 )
-mode = 2
-physics_material_override = SubResource( 1 )
+[node name="Message3" type="Node2D" parent="Messages"]
+editor/display_folded = true
+position = Vector2( 40.8112, 48.0592 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Game Over Ball2"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
+[node name="ColorRect" type="ColorRect" parent="Messages/Message3"]
+margin_left = 446.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 296.0
+color = Color( 0, 0, 0, 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball2"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
+[node name="Label" type="Label" parent="Messages/Message3"]
+margin_left = 450.818
+margin_top = 268.564
+margin_right = 523.818
+margin_bottom = 282.564
+text = "Game Over"
 
-[node name="Game Over Ball4" type="RigidBody2D" parent="."]
-position = Vector2( 351.643, 37.6525 )
-mode = 2
-physics_material_override = SubResource( 1 )
+[node name="Message4" type="Node2D" parent="Messages"]
+editor/display_folded = true
+position = Vector2( -42.9893, -31.5513 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Game Over Ball4"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
+[node name="ColorRect" type="ColorRect" parent="Messages/Message4"]
+margin_left = 446.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 296.0
+color = Color( 0, 0, 0, 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball4"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
+[node name="Label" type="Label" parent="Messages/Message4"]
+margin_left = 450.818
+margin_top = 268.564
+margin_right = 523.818
+margin_bottom = 282.564
+text = "Game Over"
 
-[node name="Game Over Ball5" type="RigidBody2D" parent="."]
-position = Vector2( 214.429, 183.654 )
-mode = 2
-mass = 96.6898
-physics_material_override = SubResource( 1 )
+[node name="Message5" type="Node2D" parent="Messages"]
+editor/display_folded = true
+position = Vector2( -42.9893, 8.254 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Game Over Ball5"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
+[node name="ColorRect" type="ColorRect" parent="Messages/Message5"]
+margin_left = 446.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 296.0
+color = Color( 0, 0, 0, 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball5"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
+[node name="Label" type="Label" parent="Messages/Message5"]
+margin_left = 450.818
+margin_top = 268.564
+margin_right = 523.818
+margin_bottom = 282.564
+text = "Game Over"
 
-[node name="Game Over Ball6" type="RigidBody2D" parent="."]
-position = Vector2( 745.691, 6.08945 )
-rotation = 0.472256
-mode = 2
-mass = 0.0142857
-physics_material_override = SubResource( 1 )
-linear_velocity = Vector2( 400, -400 )
+[node name="Message6" type="Node2D" parent="Messages"]
+editor/display_folded = true
+position = Vector2( -42.9893, 48.0592 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Game Over Ball6"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
+[node name="ColorRect" type="ColorRect" parent="Messages/Message6"]
+margin_left = 446.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 296.0
+color = Color( 0, 0, 0, 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball6"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
+[node name="Label" type="Label" parent="Messages/Message6"]
+margin_left = 450.818
+margin_top = 268.564
+margin_right = 523.818
+margin_bottom = 282.564
+text = "Game Over"
 
-[node name="Game Over Ball7" type="RigidBody2D" parent="."]
-position = Vector2( 430.204, 170.824 )
-rotation = -0.249036
-mode = 2
-physics_material_override = SubResource( 1 )
-linear_velocity = Vector2( 800, -800 )
-angular_velocity = 200.0
+[node name="Message7" type="Node2D" parent="Messages"]
+editor/display_folded = true
+position = Vector2( 123.215, -31.5512 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Game Over Ball7"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
+[node name="ColorRect" type="ColorRect" parent="Messages/Message7"]
+margin_left = 446.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 296.0
+color = Color( 0, 0, 0, 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball7"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
+[node name="Label" type="Label" parent="Messages/Message7"]
+margin_left = 450.818
+margin_top = 268.564
+margin_right = 523.818
+margin_bottom = 282.564
+text = "Game Over"
 
-[node name="Game Over Ball8" type="RigidBody2D" parent="."]
-position = Vector2( 786.766, 332.637 )
-rotation = -0.906513
-mode = 2
-mass = 52.5612
-physics_material_override = SubResource( 1 )
+[node name="Message8" type="Node2D" parent="Messages"]
+editor/display_folded = true
+position = Vector2( 123.215, 8.254 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Game Over Ball8"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
+[node name="ColorRect" type="ColorRect" parent="Messages/Message8"]
+margin_left = 446.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 296.0
+color = Color( 0, 0, 0, 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball8"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
+[node name="Label" type="Label" parent="Messages/Message8"]
+margin_left = 450.818
+margin_top = 268.564
+margin_right = 523.818
+margin_bottom = 282.564
+text = "Game Over"
 
-[node name="Game Over Ball9" type="RigidBody2D" parent="."]
-position = Vector2( 582.996, 37.8601 )
-rotation = 2.48785
-mode = 2
-mass = 6687.24
-physics_material_override = SubResource( 1 )
+[node name="Message9" type="Node2D" parent="Messages"]
+position = Vector2( 123.215, 48.0592 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Game Over Ball9"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
+[node name="ColorRect" type="ColorRect" parent="Messages/Message9"]
+margin_left = 446.0
+margin_top = 256.0
+margin_right = 530.0
+margin_bottom = 296.0
+color = Color( 0, 0, 0, 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball9"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
-
-[node name="Game Over Ball10" type="RigidBody2D" parent="."]
-position = Vector2( 649.213, 185.987 )
-rotation = 2.42092
-mode = 2
-physics_material_override = SubResource( 1 )
-linear_velocity = Vector2( 550, -550 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Game Over Ball10"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball10"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
-
-[node name="Game Over Ball11" type="RigidBody2D" parent="."]
-position = Vector2( 482.69, 287.459 )
-mode = 2
-physics_material_override = SubResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Game Over Ball11"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball11"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
-
-[node name="Game Over Ball12" type="RigidBody2D" parent="."]
-position = Vector2( 154.768, 324.691 )
-rotation = -1.09166
-mode = 2
-physics_material_override = SubResource( 1 )
-linear_velocity = Vector2( 10, -10 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Game Over Ball12"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball12"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
-
-[node name="Game Over Ball13" type="RigidBody2D" parent="."]
-position = Vector2( 359.54, 403.449 )
-rotation = 0.373024
-mode = 2
-mass = 0.0142857
-physics_material_override = SubResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Game Over Ball13"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball13"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
-
-[node name="Game Over Ball14" type="RigidBody2D" parent="."]
-position = Vector2( 584.36, 406.313 )
-rotation = -1.12035
-mode = 2
-physics_material_override = SubResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Game Over Ball14"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball14"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
-
-[node name="Game Over Ball15" type="RigidBody2D" parent="."]
-position = Vector2( -51.4359, 205.837 )
-rotation = -0.928227
-mode = 2
-physics_material_override = SubResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Game Over Ball15"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball15"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
-
-[node name="Game Over Ball16" type="RigidBody2D" parent="."]
-position = Vector2( 30.1866, 427.793 )
-rotation = -0.678353
-mode = 2
-mass = 0.0102041
-physics_material_override = SubResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Game Over Ball16"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball16"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
-
-[node name="Game Over Ball17" type="RigidBody2D" parent="."]
-position = Vector2( 671.71, 341.874 )
-mode = 2
-physics_material_override = SubResource( 1 )
-linear_velocity = Vector2( 1000, -1000 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Game Over Ball17"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball17"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
-
-[node name="Game Over Ball18" type="RigidBody2D" parent="."]
-position = Vector2( 776.245, 91.279 )
-rotation = -3.09114
-mode = 2
-mass = 0.102041
-physics_material_override = SubResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Game Over Ball18"]
-position = Vector2( 160.117, 60.8616 )
-scale = Vector2( 0.494527, 0.458549 )
-texture = ExtResource( 1 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game Over Ball18"]
-position = Vector2( 159.803, 60.8616 )
-shape = SubResource( 2 )
+[node name="Label" type="Label" parent="Messages/Message9"]
+margin_left = 450.818
+margin_top = 268.564
+margin_right = 523.818
+margin_bottom = 282.564
+text = "Game Over"
 
 [node name="Wall" type="StaticBody2D" parent="."]
 
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Wall"]
-polygon = PoolVector2Array( -0.260315, -1.13327, 1.03204, 601.104, -61.001, 601.104, -61.001, -70.9205, 1069.81, -69.6281, 1071.1, 632.121, 0.475281, 628.55, 1.28979, 591.898, 1024.58, 599.812, 1024.58, -2.42563 )
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wall"]
+polygon = PoolVector2Array( 0.15033, -0.506927, 0.114868, 619.571, -90.9913, 619.571, -90.8718, -80.6532, 1120.76, -79.3957, 1119.42, 671.651, -0.682251, 671.691, 0.554993, 599.765, 1024.05, 600.142, 1024.47, -1.1683 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 2 )
-autoplay = true
+[node name="Tools" type="Node2D" parent="."]
+
+[node name="Tool" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 375.607, 262.592 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool"]
+shape = SubResource( 1 )
+
+[node name="Tool2" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 677.517, 244.001 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool2"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool2"]
+shape = SubResource( 1 )
+
+[node name="Tool3" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 678.569, 313.475 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool3"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool3"]
+shape = SubResource( 1 )
+
+[node name="Tool5" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 446.99, 200.843 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool5"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool5"]
+shape = SubResource( 1 )
+
+[node name="Tool6" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 592.253, 201.896 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool6"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool6"]
+shape = SubResource( 1 )
+
+[node name="Tool7" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 450.703, 377.646 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool7"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool7"]
+shape = SubResource( 1 )
+
+[node name="Tool8" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 593.204, 383.346 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool8"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool8"]
+shape = SubResource( 1 )
+
+[node name="Tool9" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 924.506, 105.229 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool9"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool9"]
+shape = SubResource( 1 )
+
+[node name="Tool10" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 836.655, 105.026 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool10"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool10"]
+shape = SubResource( 1 )
+
+[node name="Tool11" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 836.655, 40.7409 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool11"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool11"]
+shape = SubResource( 1 )
+
+[node name="Tool12" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 924.89, 42.0014 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool12"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool12"]
+shape = SubResource( 1 )
+
+[node name="Tool13" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 121.67, 41.1701 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool13"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool13"]
+shape = SubResource( 1 )
+
+[node name="Tool14" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 118.877, 102.624 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool14"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool14"]
+shape = SubResource( 1 )
+
+[node name="Tool15" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 205.471, 103.322 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool15"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool15"]
+shape = SubResource( 1 )
+
+[node name="Tool16" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 206.169, 41.1701 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool16"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool16"]
+shape = SubResource( 1 )
+
+[node name="Tool17" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 109.178, 483.156 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool17"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool17"]
+shape = SubResource( 1 )
+
+[node name="Tool18" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 180.387, 467.195 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool18"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool18"]
+shape = SubResource( 1 )
+
+[node name="Tool19" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 123.911, 543.315 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool19"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool19"]
+shape = SubResource( 1 )
+
+[node name="Tool20" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 193.892, 524.899 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool20"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool20"]
+shape = SubResource( 1 )
+
+[node name="Tool21" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 818.81, 447.551 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool21"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool21"]
+shape = SubResource( 1 )
+
+[node name="Tool22" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 934.218, 458.601 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool22"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool22"]
+shape = SubResource( 1 )
+
+[node name="Tool23" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 831.088, 548.226 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool23"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool23"]
+shape = SubResource( 1 )
+
+[node name="Tool24" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 942.812, 545.77 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool24"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool24"]
+shape = SubResource( 1 )
+
+[node name="Tool4" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 375.878, 291.921 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool4"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool4"]
+shape = SubResource( 1 )
+
+[node name="Image" type="RigidBody2D" parent="."]
+position = Vector2( 280.449, 277.101 )
+collision_layer = 1025
+collision_mask = 1025
+mass = 0.01
+physics_material_override = SubResource( 3 )
+linear_velocity = Vector2( 200, 0 )
+angular_damp = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Image"]
+position = Vector2( -0.0661163, -0.237717 )
+scale = Vector2( 0.265649, 0.22156 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Image"]
+shape = SubResource( 2 )
