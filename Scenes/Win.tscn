@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Breakout Tile Set Free/PNG/49-Breakout-Tiles.png" type="Texture" id=1]
+[ext_resource path="res://Breakout Tile Set Free/PNG/58-Breakout-Tiles.png" type="Texture" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 13.7408
+height = 66.5854
+
+[sub_resource type="PhysicsMaterial" id=2]
+friction = 0.0
+bounce = 10.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 9.1247
+
+[node name="Win" type="Node2D"]
+
+[node name="Wall" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wall"]
+polygon = PoolVector2Array( 0.326668, 0.589386, 0.413391, 620.753, -69.8498, 620.036, -69.5256, -59.5784, 1084.58, -59.6785, 1083.4, 660.068, 0.413391, 660.545, 0.413391, 600.319, 1024.24, 600.236, 1024.07, -0.118141 )
+
+[node name="Paddle" type="KinematicBody2D" parent="."]
+position = Vector2( 516.757, 576.25 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Paddle"]
+position = Vector2( -0.141823, 0.0134773 )
+scale = Vector2( 0.194549, 0.216358 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paddle"]
+rotation = 1.57322
+shape = SubResource( 1 )
+
+[node name="Ball" type="RigidBody2D" parent="."]
+position = Vector2( 513.095, 515.011 )
+physics_material_override = SubResource( 2 )
+linear_velocity = Vector2( 200, -200 )
+linear_damp = 0.0
+angular_velocity = 5.0
+angular_damp = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Ball"]
+position = Vector2( 0.0919868, 0.146512 )
+scale = Vector2( 0.143865, 0.140969 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
+shape = SubResource( 3 )

@@ -669,6 +669,7 @@ texture = ExtResource( 6 )
 shape = SubResource( 3 )
 
 [node name="Blue Tiles" type="Node" parent="Tiles"]
+editor/display_folded = true
 
 [node name="Tile" type="StaticBody2D" parent="Tiles/Blue Tiles" groups=[
 "Tiles",

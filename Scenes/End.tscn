@@ -17,7 +17,6 @@ extents = Vector2( 35.7872, 23.7351 )
 [node name="Game Over" type="Node2D"]
 
 [node name="Messages" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Message" type="Node2D" parent="Messages"]
 editor/display_folded = true
@@ -214,7 +213,6 @@ editor/display_folded = true
 polygon = PoolVector2Array( 0.15033, -0.506927, 0.114868, 619.571, -90.9913, 619.571, -90.8718, -80.6532, 1120.76, -79.3957, 1119.42, 671.651, -0.682251, 671.691, 0.554993, 599.765, 1024.05, 600.142, 1024.47, -1.1683 )
 
 [node name="Tools" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Tool" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
@@ -263,7 +261,7 @@ shape = SubResource( 1 )
 
 [node name="Tool40" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
-position = Vector2( 1024.6, 250.168 )
+position = Vector2( 1024.6, 249.455 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -323,7 +321,7 @@ shape = SubResource( 1 )
 
 [node name="Tool54" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
-position = Vector2( 979.563, 316.035 )
+position = Vector2( 979.563, 316.273 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -353,7 +351,7 @@ shape = SubResource( 1 )
 
 [node name="Tool49" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
-position = Vector2( 926.687, 315.968 )
+position = Vector2( 926.687, 316.205 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -383,7 +381,7 @@ shape = SubResource( 1 )
 
 [node name="Tool45" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
-position = Vector2( 925.996, 250.139 )
+position = Vector2( 925.996, 249.766 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -394,6 +392,36 @@ scale = Vector2( 0.148006, 0.145058 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool45"]
+shape = SubResource( 1 )
+
+[node name="Tool72" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 953.035, 249.551 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool72"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool72"]
+shape = SubResource( 1 )
+
+[node name="Tool73" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 953.922, 316.684 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool73"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool73"]
 shape = SubResource( 1 )
 
 [node name="Tool32" type="StaticBody2D" parent="Tools"]
@@ -413,7 +441,7 @@ shape = SubResource( 1 )
 
 [node name="Tool53" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
-position = Vector2( 872.06, 250.323 )
+position = Vector2( 872.06, 250.664 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -486,6 +514,66 @@ texture = ExtResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool52"]
 shape = SubResource( 1 )
 
+[node name="Tool68" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 840.816, 316.57 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool68"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool68"]
+shape = SubResource( 1 )
+
+[node name="Tool69" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 838.773, 250.501 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool69"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool69"]
+shape = SubResource( 1 )
+
+[node name="Tool70" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 900.074, 316.23 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool70"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool70"]
+shape = SubResource( 1 )
+
+[node name="Tool71" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 899.733, 250.604 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool71"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool71"]
+shape = SubResource( 1 )
+
 [node name="Tool35" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
 position = Vector2( 129.382, 245.418 )
@@ -533,7 +621,7 @@ shape = SubResource( 1 )
 
 [node name="Tool51" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
-position = Vector2( 752.874, 250.122 )
+position = Vector2( 752.551, 251.093 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -563,7 +651,7 @@ shape = SubResource( 1 )
 
 [node name="Tool50" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
-position = Vector2( 752.099, 316.38 )
+position = Vector2( 752.729, 316.38 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -574,6 +662,66 @@ scale = Vector2( 0.148006, 0.145058 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool50"]
+shape = SubResource( 1 )
+
+[node name="Tool66" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 779.906, 316.38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool66"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool66"]
+shape = SubResource( 1 )
+
+[node name="Tool67" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 782.171, 250.702 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool67"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool67"]
+shape = SubResource( 1 )
+
+[node name="Tool64" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 726.549, 317.044 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool64"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool64"]
+shape = SubResource( 1 )
+
+[node name="Tool65" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 724.608, 250.719 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool65"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool65"]
 shape = SubResource( 1 )
 
 [node name="Tool38" type="StaticBody2D" parent="Tools"]
@@ -653,7 +801,7 @@ shape = SubResource( 1 )
 
 [node name="Tool46" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
-position = Vector2( 979.886, 249.806 )
+position = Vector2( 979.457, 249.499 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -664,6 +812,36 @@ scale = Vector2( 0.148006, 0.145058 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool46"]
+shape = SubResource( 1 )
+
+[node name="Tool74" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 1001.78, 249.284 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool74"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool74"]
+shape = SubResource( 1 )
+
+[node name="Tool75" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 1001.56, 316.39 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool75"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool75"]
 shape = SubResource( 1 )
 
 [node name="Tool5" type="StaticBody2D" parent="Tools"]
@@ -681,6 +859,21 @@ texture = ExtResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool5"]
 shape = SubResource( 1 )
 
+[node name="Tool9" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 450.009, 10.7454 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool9"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool9"]
+shape = SubResource( 1 )
+
 [node name="Tool7" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
 position = Vector2( 449.918, 360.911 )
@@ -694,6 +887,21 @@ scale = Vector2( 0.148006, 0.145058 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool7"]
+shape = SubResource( 1 )
+
+[node name="Tool11" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 449.328, 579.334 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool11"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool11"]
 shape = SubResource( 1 )
 
 [node name="Tool8" type="StaticBody2D" parent="Tools"]
@@ -711,6 +919,21 @@ texture = ExtResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool8"]
 shape = SubResource( 1 )
 
+[node name="Tool12" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 589.312, 579.899 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool12"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool12"]
+shape = SubResource( 1 )
+
 [node name="Tool6" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
 position = Vector2( 590.14, 199.758 )
@@ -724,6 +947,21 @@ scale = Vector2( 0.148006, 0.145058 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool6"]
+shape = SubResource( 1 )
+
+[node name="Tool10" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 590.759, 10.85 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool10"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool10"]
 shape = SubResource( 1 )
 
 [node name="Tool56" type="StaticBody2D" parent="Tools"]
@@ -741,6 +979,21 @@ texture = ExtResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool56"]
 shape = SubResource( 1 )
 
+[node name="Tool76" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 426.51, 10.7454 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool76"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool76"]
+shape = SubResource( 1 )
+
 [node name="Tool60" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
 position = Vector2( 426.419, 360.911 )
@@ -754,6 +1007,21 @@ scale = Vector2( 0.148006, 0.145058 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool60"]
+shape = SubResource( 1 )
+
+[node name="Tool81" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 425.829, 579.334 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool81"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool81"]
 shape = SubResource( 1 )
 
 [node name="Tool63" type="StaticBody2D" parent="Tools"]
@@ -771,6 +1039,21 @@ texture = ExtResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool63"]
 shape = SubResource( 1 )
 
+[node name="Tool83" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 565.813, 579.899 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool83"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool83"]
+shape = SubResource( 1 )
+
 [node name="Tool58" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
 position = Vector2( 566.641, 199.758 )
@@ -784,6 +1067,21 @@ scale = Vector2( 0.148006, 0.145058 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool58"]
+shape = SubResource( 1 )
+
+[node name="Tool79" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 567.26, 10.85 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool79"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool79"]
 shape = SubResource( 1 )
 
 [node name="Tool57" type="StaticBody2D" parent="Tools"]
@@ -801,6 +1099,21 @@ texture = ExtResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool57"]
 shape = SubResource( 1 )
 
+[node name="Tool77" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 473.508, 10.7454 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool77"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool77"]
+shape = SubResource( 1 )
+
 [node name="Tool61" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
 position = Vector2( 473.416, 360.911 )
@@ -814,6 +1127,21 @@ scale = Vector2( 0.148006, 0.145058 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool61"]
+shape = SubResource( 1 )
+
+[node name="Tool80" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 472.827, 579.334 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool80"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool80"]
 shape = SubResource( 1 )
 
 [node name="Tool62" type="StaticBody2D" parent="Tools"]
@@ -831,6 +1159,21 @@ texture = ExtResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool62"]
 shape = SubResource( 1 )
 
+[node name="Tool82" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 612.811, 579.899 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool82"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool82"]
+shape = SubResource( 1 )
+
 [node name="Tool59" type="StaticBody2D" parent="Tools"]
 editor/display_folded = true
 position = Vector2( 613.638, 199.758 )
@@ -844,6 +1187,21 @@ scale = Vector2( 0.148006, 0.145058 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool59"]
+shape = SubResource( 1 )
+
+[node name="Tool78" type="StaticBody2D" parent="Tools"]
+editor/display_folded = true
+position = Vector2( 614.257, 10.85 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Tools/Tool78"]
+position = Vector2( 0.0746837, 0.121102 )
+scale = Vector2( 0.148006, 0.145058 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tools/Tool78"]
 shape = SubResource( 1 )
 
 [node name="Tool4" type="StaticBody2D" parent="Tools"]
@@ -877,11 +1235,10 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="Images" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Image" type="RigidBody2D" parent="Images"]
 editor/display_folded = true
-position = Vector2( 716.232, 284.082 )
+position = Vector2( 970.022, 283.057 )
 collision_layer = 1025
 collision_mask = 1025
 mass = 0.01
@@ -908,6 +1265,7 @@ collision_mask = 1025
 mass = 0.01
 physics_material_override = SubResource( 2 )
 linear_velocity = Vector2( 200, 0 )
+linear_damp = 0.0
 angular_damp = 0.0
 __meta__ = {
 "_edit_group_": true
@@ -923,13 +1281,14 @@ shape = SubResource( 3 )
 
 [node name="Image3" type="RigidBody2D" parent="Images"]
 editor/display_folded = true
-position = Vector2( 449.817, 25.6802 )
+position = Vector2( 450.631, 83.6653 )
 collision_layer = 1025
 collision_mask = 1025
 physics_material_override = SubResource( 2 )
-linear_velocity = Vector2( 0, 100 )
+gravity_scale = 0.0
+linear_velocity = Vector2( 0, 300 )
+linear_damp = 0.0
 angular_damp = 0.0
-applied_force = Vector2( 0, 50 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -944,13 +1303,14 @@ shape = SubResource( 3 )
 
 [node name="Image4" type="RigidBody2D" parent="Images"]
 editor/display_folded = true
-position = Vector2( 590.726, 25.6802 )
+position = Vector2( 589.646, 84.5382 )
 collision_layer = 1025
 collision_mask = 1025
 physics_material_override = SubResource( 2 )
-linear_velocity = Vector2( 0, 100 )
+gravity_scale = 0.0
+linear_velocity = Vector2( 0, 300 )
+linear_damp = 0.0
 angular_damp = 0.0
-applied_force = Vector2( 0, 50 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -965,11 +1325,12 @@ shape = SubResource( 3 )
 
 [node name="Image5" type="RigidBody2D" parent="Images"]
 editor/display_folded = true
-position = Vector2( 449.063, 396.091 )
+position = Vector2( 448.808, 421.332 )
 collision_layer = 1025
 collision_mask = 1025
 physics_material_override = SubResource( 2 )
-linear_velocity = Vector2( 0, 100 )
+gravity_scale = 0.0
+linear_velocity = Vector2( 0, 600 )
 angular_damp = 0.0
 applied_force = Vector2( 0, 50 )
 __meta__ = {
@@ -986,11 +1347,12 @@ shape = SubResource( 3 )
 
 [node name="Image6" type="RigidBody2D" parent="Images"]
 editor/display_folded = true
-position = Vector2( 589.718, 395.578 )
+position = Vector2( 589.718, 421.397 )
 collision_layer = 1025
 collision_mask = 1025
 physics_material_override = SubResource( 2 )
-linear_velocity = Vector2( 0, 100 )
+gravity_scale = 0.0
+linear_velocity = Vector2( 0, 600 )
 angular_damp = 0.0
 applied_force = Vector2( 0, 50 )
 __meta__ = {
