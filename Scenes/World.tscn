@@ -53,7 +53,6 @@ shape = SubResource( 1 )
 position = Vector2( 533.95, 532.3 )
 
 [node name="Wall" type="StaticBody2D" parent="."]
-editor/display_folded = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wall"]
 polygon = PoolVector2Array( -0.187302, -0.11644, 0.28331, 700.476, -60.6772, 700.476, -59.7586, -60.0305, 1075.55, -59.7733, 1075.84, 709.754, 1024.41, 709.754, 1024.29, -0.196701 )
