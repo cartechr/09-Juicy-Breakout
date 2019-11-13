@@ -948,3 +948,5 @@ margin_right = 1004.0
 margin_bottom = 21.0
 text = "Lives:"
 script = ExtResource( 8 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
