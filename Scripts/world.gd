@@ -4,10 +4,14 @@ export var score = 0
 export var lives = 3
 
 
+
 func increase_score(s):
  score += int(s)
  find_node("Score").update_score()
+ if get_tree().get_nodes_in_group("Tiles").size() <= 0:
+  get_tree().change_scene("res://Scenes/Win.tscn")
  
+
 func decrease_lives():
  lives -= 1
  find_node("Lives").update_lives()

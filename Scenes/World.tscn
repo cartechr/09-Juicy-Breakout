@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Scripts/world.gd" type="Script" id=1]
 [ext_resource path="res://Breakout Tile Set Free/PNG/YVQCxZy.ogv" type="VideoStream" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://Scripts/Score.gd" type="Script" id=9]
 [ext_resource path="res://Scripts/Lives.gd" type="Script" id=10]
 [ext_resource path="res://Relaxing Xenoblade Chronicles Music-[AudioTrimmer.com] (1).wav" type="AudioStream" id=11]
+[ext_resource path="res://Scripts/Power_Up.gd" type="Script" id=12]
+[ext_resource path="res://Breakout Tile Set Free/PNG/59-Breakout-Tiles.png" type="Texture" id=13]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 13.7256
@@ -31,17 +33,23 @@ extents = Vector2( 40.1846, 23.1896 )
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 59.6727, 31.0168 )
 
+[sub_resource type="CircleShape2D" id=7]
+radius = 23.7217
+
 [node name="World" type="Node"]
 script = ExtResource( 1 )
 
 [node name="VideoPlayer" type="VideoPlayer" parent="."]
-margin_right = 1024.0
-margin_bottom = 600.0
+margin_left = 0.37735
+margin_top = 0.37735
+margin_right = 1024.38
+margin_bottom = 600.377
 stream = ExtResource( 2 )
 autoplay = true
 script = ExtResource( 3 )
 
 [node name="Paddle" type="KinematicBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( 511.961, 602.411 )
 script = ExtResource( 4 )
 __meta__ = {
@@ -67,6 +75,7 @@ position = Vector2( 533.95, 532.3 )
 polygon = PoolVector2Array( -0.187302, -0.11644, 0.28331, 700.476, -60.6772, 700.476, -59.7586, -60.0305, 1075.55, -59.7733, 1075.84, 709.754, 1024.41, 709.754, 1024.29, -0.196701 )
 
 [node name="Tiles" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="Orange Tiles" type="Node" parent="Tiles"]
 editor/display_folded = true
@@ -678,6 +687,7 @@ texture = ExtResource( 8 )
 shape = SubResource( 3 )
 
 [node name="Blue Tiles" type="Node" parent="Tiles"]
+editor/display_folded = true
 
 [node name="Tile" type="StaticBody2D" parent="Tiles/Blue Tiles" groups=[
 "Tiles",
@@ -960,3 +970,18 @@ script = ExtResource( 10 )
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 11 )
 autoplay = true
+
+[node name="Power_Up" type="RigidBody2D" parent="."]
+position = Vector2( -216.881, 36.2329 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Power_Up"]
+position = Vector2( -0.116699, 0.0858002 )
+scale = Vector2( 0.316591, 0.330782 )
+texture = ExtResource( 13 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Power_Up"]
+shape = SubResource( 7 )
