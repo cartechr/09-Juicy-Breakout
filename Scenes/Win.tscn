@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Breakout Tile Set Free/PNG/49-Breakout-Tiles.png" type="Texture" id=1]
 [ext_resource path="res://Breakout Tile Set Free/PNG/58-Breakout-Tiles.png" type="Texture" id=2]
 [ext_resource path="res://Breakout Tile Set Free/PNG/29-Breakout-Tiles.png" type="Texture" id=3]
-[ext_resource path="res://Breakout Tile Set Free/PNG/11-Breakout-Tiles.png" type="Texture" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 13.7408
@@ -41,7 +40,7 @@ rotation = 1.57322
 shape = SubResource( 1 )
 
 [node name="Ball" type="RigidBody2D" parent="."]
-position = Vector2( 521.167, 500.186 )
+position = Vector2( 527.396, 498.94 )
 physics_material_override = SubResource( 2 )
 linear_velocity = Vector2( 200, -200 )
 linear_damp = 0.0
@@ -57,6 +56,101 @@ scale = Vector2( 0.143865, 0.140969 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
+shape = SubResource( 3 )
+
+[node name="Ball6" type="RigidBody2D" parent="."]
+position = Vector2( 756.632, 81.5811 )
+physics_material_override = SubResource( 2 )
+linear_velocity = Vector2( 200, -200 )
+linear_damp = 0.0
+angular_velocity = 5.0
+angular_damp = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Ball6"]
+position = Vector2( 0.0919868, 0.146512 )
+scale = Vector2( 0.143865, 0.140969 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball6"]
+shape = SubResource( 3 )
+
+[node name="Ball2" type="RigidBody2D" parent="."]
+position = Vector2( 144.921, 277.179 )
+physics_material_override = SubResource( 2 )
+linear_velocity = Vector2( 200, -200 )
+linear_damp = 0.0
+angular_velocity = 5.0
+angular_damp = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Ball2"]
+position = Vector2( 0.0919868, 0.146512 )
+scale = Vector2( 0.143865, 0.140969 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball2"]
+shape = SubResource( 3 )
+
+[node name="Ball3" type="RigidBody2D" parent="."]
+position = Vector2( 912.363, 435.402 )
+physics_material_override = SubResource( 2 )
+linear_velocity = Vector2( 200, -200 )
+linear_damp = 0.0
+angular_velocity = 5.0
+angular_damp = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Ball3"]
+position = Vector2( 0.0919868, 0.146512 )
+scale = Vector2( 0.143865, 0.140969 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball3"]
+shape = SubResource( 3 )
+
+[node name="Ball5" type="RigidBody2D" parent="."]
+position = Vector2( 294.423, 77.8435 )
+physics_material_override = SubResource( 2 )
+linear_velocity = Vector2( 200, -200 )
+linear_damp = 0.0
+angular_velocity = 5.0
+angular_damp = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Ball5"]
+position = Vector2( 0.0919868, 0.146512 )
+scale = Vector2( 0.143865, 0.140969 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball5"]
+shape = SubResource( 3 )
+
+[node name="Ball4" type="RigidBody2D" parent="."]
+position = Vector2( 91.3494, 482.744 )
+physics_material_override = SubResource( 2 )
+linear_velocity = Vector2( 200, -200 )
+linear_damp = 0.0
+angular_velocity = 5.0
+angular_damp = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Ball4"]
+position = Vector2( 0.0919868, 0.146512 )
+scale = Vector2( 0.143865, 0.140969 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball4"]
 shape = SubResource( 3 )
 
 [node name="Node2D" type="Node2D" parent="."]
@@ -515,16 +609,3 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Squares/Node2D/KinematicBody2D6"]
 shape = SubResource( 4 )
-
-[node name="Tiles" type="Node2D" parent="."]
-
-[node name="Node2D" type="Node2D" parent="Tiles"]
-
-[node name="KinematicBody2D" type="KinematicBody2D" parent="Tiles/Node2D"]
-
-[node name="Sprite" type="Sprite" parent="Tiles/Node2D/KinematicBody2D"]
-position = Vector2( 98.6019, 18.9545 )
-scale = Vector2( 0.147405, 0.219202 )
-texture = ExtResource( 4 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Node2D/KinematicBody2D"]
