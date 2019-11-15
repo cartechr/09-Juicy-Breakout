@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/world.gd" type="Script" id=1]
 [ext_resource path="res://Breakout Tile Set Free/PNG/YVQCxZy.ogv" type="VideoStream" id=2]
@@ -11,8 +11,6 @@
 [ext_resource path="res://Scripts/Score.gd" type="Script" id=9]
 [ext_resource path="res://Scripts/Lives.gd" type="Script" id=10]
 [ext_resource path="res://Relaxing Xenoblade Chronicles Music-[AudioTrimmer.com] (1).wav" type="AudioStream" id=11]
-[ext_resource path="res://Scripts/Power_Up.gd" type="Script" id=12]
-[ext_resource path="res://Breakout Tile Set Free/PNG/59-Breakout-Tiles.png" type="Texture" id=13]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 13.7256
@@ -33,9 +31,6 @@ extents = Vector2( 40.1846, 23.1896 )
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 59.6727, 31.0168 )
 
-[sub_resource type="CircleShape2D" id=7]
-radius = 23.7217
-
 [node name="World" type="Node"]
 script = ExtResource( 1 )
 
@@ -49,8 +44,8 @@ autoplay = true
 script = ExtResource( 3 )
 
 [node name="Paddle" type="KinematicBody2D" parent="."]
-editor/display_folded = true
 position = Vector2( 511.961, 602.411 )
+collision_layer = 3
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
@@ -65,6 +60,9 @@ texture = ExtResource( 5 )
 position = Vector2( 21.433, -25.0237 )
 rotation = 1.57068
 shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="Paddle"]
+autostart = true
 
 [node name="Ball" parent="." instance=ExtResource( 6 )]
 position = Vector2( 533.95, 532.3 )
@@ -95,7 +93,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile3" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -113,7 +111,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile3"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile4" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -131,7 +129,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile4"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile5" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -149,7 +147,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile5"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile6" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -167,7 +165,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile6"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile7" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -185,7 +183,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile7"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile8" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -203,7 +201,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile8"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile9" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -221,7 +219,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile9"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile10" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -239,7 +237,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile10"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile11" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -257,7 +255,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile11"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile12" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -275,7 +273,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile12"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile13" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -293,7 +291,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile13"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile14" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -311,7 +309,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile14"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile15" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -329,7 +327,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile15"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile16" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -347,7 +345,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile16"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile17" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -365,7 +363,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile17"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile18" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -383,7 +381,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile18"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile19" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -401,7 +399,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile19"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile20" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -419,7 +417,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile20"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile21" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -437,7 +435,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile21"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile22" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -455,7 +453,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile22"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile23" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -473,7 +471,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile23"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile24" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -491,7 +489,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile24"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile25" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -509,7 +507,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile25"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Tile2" type="StaticBody2D" parent="Tiles/Orange Tiles" groups=[
@@ -527,7 +525,7 @@ scale = Vector2( 0.0800467, 0.177519 )
 texture = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles/Orange Tiles/Tile2"]
-position = Vector2( 0.237823, -1.90735e-006 )
+position = Vector2( 0.237823, -1.90735e-06 )
 shape = SubResource( 2 )
 
 [node name="Red Tiles" type="Node" parent="Tiles"]
@@ -970,18 +968,4 @@ script = ExtResource( 10 )
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 11 )
 autoplay = true
-
-[node name="Power_Up" type="RigidBody2D" parent="."]
-position = Vector2( -216.881, 36.2329 )
-script = ExtResource( 12 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Power_Up"]
-position = Vector2( -0.116699, 0.0858002 )
-scale = Vector2( 0.316591, 0.330782 )
-texture = ExtResource( 13 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Power_Up"]
-shape = SubResource( 7 )
+[connection signal="timeout" from="Paddle/Timer" to="Paddle" method="_on_Timer_timeout"]
