@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Power_Up.gd" type="Script" id=1]
+[ext_resource path="res://Breakout Tile Set Free/PNG/59-Breakout-Tiles.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 23.7217
+
+[node name="Power_Up" type="RigidBody2D"]
+position = Vector2( 270.119, 72.2329 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -0.116699, 0.0858002 )
+scale = Vector2( 0.316591, 0.330782 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )

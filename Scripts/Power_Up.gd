@@ -8,7 +8,7 @@ func _physics_process(delta):
 	var bodies = get_colliding_bodies()
 	for body in bodies:
 		if body.get_name() == "Paddle":
-			print ("powerup")
+			body.power_up()
 			queue_free()
   
 	if position.y > get_viewport_rect().end.y:
